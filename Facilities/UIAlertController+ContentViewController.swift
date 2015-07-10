@@ -12,9 +12,9 @@ import UIKit
 
 public extension UIAlertController {
 
-    public var contentViewController: UIViewController? {
-        set { setValue(contentViewController, forKey: "contentViewController") }
-        get { return valueForKey("contentViewController") as? UIViewController }
-    }
-    
+//    public var contentViewController: UIViewController? {
+//        set { setValue(contentViewController, forKey: "contentViewController") }
+//        get { return valueForKey("contentViewController") as? UIViewController }
+//    }
+
 }
