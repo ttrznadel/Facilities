@@ -26,9 +26,7 @@ public extension UITextField {
             return objc_getAssociatedObject(self, &AssociatedObjectKey.predicate) as? NSPredicate
         }
         set {
-            if let newValue = newValue {
-                objc_setAssociatedObject(self, &AssociatedObjectKey.predicate, newValue as NSPredicate?, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            }
+            objc_setAssociatedObject(self, &AssociatedObjectKey.predicate, newValue as NSPredicate?, objc_AssociationPolicy(OBJC_ASSOCIATION_RETAIN_NONATOMIC))
         }
     }
 
